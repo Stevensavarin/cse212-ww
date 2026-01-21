@@ -13,7 +13,10 @@ public class PersonQueue
     /// <param name="person">The person to add</param>
     public void Enqueue(Person person)
     {
-        _queue.Insert(0, person);
+        // enquing by inserting at the beginning of the queue is like passing people in a queue. 
+        // must join queue at the back
+        //_queue.Insert(0, person);
+        _queue.Add(person);
     }
 
     public Person Dequeue()
